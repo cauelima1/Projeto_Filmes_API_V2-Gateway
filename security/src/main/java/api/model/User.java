@@ -31,19 +31,14 @@ public class User implements UserDetails {
         this.userRole = userRole;
     }
 
-    public User(String login, String encryptedPassord, UserRole userRole) {
+    public User(String login, String encryptedPassword, UserRole userRole) {
+        this.login=login;
+        this.password=encryptedPassword;
+        this.userRole=userRole;
     }
 
     public UserRole getUserRole() {
         return userRole;
-    }
-
-    public void setUserRole(UserRole userRole) {
-        this.userRole = userRole;
-    }
-
-    public User(String login, String encryptedPassord, UserRole perfil, UserRole userRole) {
-        this.userRole = userRole;
     }
 
     public UUID getId() {
@@ -111,6 +106,5 @@ public class User implements UserDetails {
     }
     
     public User(){
-        
     }
 }

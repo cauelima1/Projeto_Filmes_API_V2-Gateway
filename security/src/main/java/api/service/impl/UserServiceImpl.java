@@ -31,14 +31,9 @@ public class UserServiceImpl implements UserService {
 
     }
 
-
+    @Override
     public User create(User user) {
-        User newUser = new User();
-        newUser.setId(newUser.getId());
-        newUser.setLogin(user.getLogin());
-        newUser.setPassword(user.getPassword());
-        newUser.setUserRole(user.getUserRole());
-        return newUser;
+        return null;
     }
 
 
