@@ -32,7 +32,7 @@ public class LoginService {
             var token = tokenService.generateToken((User) auth.getPrincipal());
             return token;
         } else{
-            return null;
+            throw new RuntimeException("Login failed.");
         }
     }
 }

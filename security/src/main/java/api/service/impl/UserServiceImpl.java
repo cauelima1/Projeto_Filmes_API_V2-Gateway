@@ -1,6 +1,5 @@
 package api.service.impl;
 
-import api.model.DTOs.RegisterDTO;
 import api.model.User;
 import api.repository.UserRepository;
 import api.service.UserService;
